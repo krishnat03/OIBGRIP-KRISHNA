@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+.mainDiv{
+    margin: 0rem 1.5rem 0rem 1.5rem;
+}
+
+.div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.firstDiv{
+    background-color: rgb(37 39 17);
+    padding-top: 3rem; 
+}
+
+.headerOne{
+    font-family: serif;
+    font-weight: bold;
+    font-size: 2.25rem;
+    line-height: 2.5srem;
+    
+}
+
+.headerTwo{
+    margin-top: 1.4rem; 
+    margin-bottom: 1.4rem;
+    font-style: italic;
+}
+
+.lifeSpan{
+    font-size: large;
+}
+
+.fa-youtube-play{
+    margin: 2.5rem;
+}
+
+.fa-youtube-play:hover{
+    transform: scale(1.3);
+}
+
+.intro{
+    background-color: rgb(233, 243, 253);
+    color: black;
+
+}
+
+.headerThree{
+    font-style: italic;
+
+}
+
+.img{
+    border-radius: 15px;
+}

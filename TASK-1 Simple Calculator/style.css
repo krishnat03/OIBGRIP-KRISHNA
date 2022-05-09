@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    outline: none;
+}
+
+.container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    position: relative;
+    animation: change 10s ease-in-out infinite;
+
+}
+
+@keyframes change{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+h1{
+    margin-bottom: 30px;
+    border: 1px solid white;
+    padding: 1.1rem;
+}
+
+.ptag{
+    margin-top: 20px;
+    color: rgb(66, 64, 64);
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.calculator {
+    background-color: rgb(255 250 228);
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: inset 5px 5px 12px #f2f2f2,
+        5px 5px 12px rgba(0, 0, 0, 0.16);
+    height: 74vh;
+    width: 34vw;
+}
+
+table {
+    margin: auto;
+}
+
+input {
+    height: 10vh;
+    width: 29.4vw;
+    font-size: 2.15rem;
+    box-shadow: inset -5px -5px 12px #f2f2f2,
+                inset 5px 5px 12px rgba(0, 0, 0, 0.16);
+    border: none;
+    border-radius: 10px;
+    color: rgb(70, 70, 70);
+    text-align: end;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding: 25px;
+}
+
+button {
+    font-size: 1.1rem;
+    width: 7vw;
+    height: 6vh;
+    box-shadow: inset 5px 5px 12px #f2f2f2,
+    inset -5px -5px 12px rgba(0, 0, 0, 0.16);
+    border: none;
+    border-radius: 10px;
+    margin: 3px;
+    background-color: rgb(255 250 228);
+}
+
+button:hover{
+    background: rgb(244, 253, 210);
+    border: 1px solid black;
+    color: rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 980px) , screen and (max-height: 650px) {
+    .calculator {
+        padding: 5px;
+        border-radius: 20px;
+        height: 69vh;
+        width: 60vw;
+    }
+
+    input {
+        width: 50vw;
+        margin-top: 38px;
+        margin-bottom: 15px;
+        padding: 7px;
+    }
+    
+    button {
+        width: 11vw;
+        border-radius: 8px;
+    }
+}
+
